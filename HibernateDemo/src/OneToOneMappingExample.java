@@ -21,7 +21,7 @@ public class OneToOneMappingExample {
 		vehicle2.setVehicleName("Suzuki");
 		
 		UserDetails user = new UserDetails();
-		user.setUserName("Smitesh");
+		user.setUserName("Smit");
 		user.getVehicle().add(vehicle1);
 		user.getVehicle().add(vehicle2);
 		
