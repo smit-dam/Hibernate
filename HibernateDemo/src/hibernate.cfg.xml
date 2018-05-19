@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+<hibernate-configuration>
+    <session-factory>
+    	<!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernatedb</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+		<!-- End-Database connection settings -->
+	
+		<!-- JDBC connection pool -->
+        <property name="hibernate.connection.pool_size">10</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+		<!-- End-JDBC connection pool -->
+    
+    	<!-- Echo all executed SQL  to stdout-->
+        <property name="hibernate.show_sql">true</property>
+   	
+   		<!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL55Dialect</property>
+  		<!-- End-SQL dialect -->
+ 
+        <!-- drop and recreate db schema 
+        create = drop if exists
+        update = insert new record
+        -->
+        <property name="hbm2ddl.auto">create</property>
+        
+        <!-- Mapping the names of annotated entity classes  -->
+		<!-- 	<mapping class="student" />  -->        
+				    	<!-- <mapping class="MyStudent" />
+				    	<mapping class ="StudentWithEmbeddedAddress" />
+				    	 -->
+    	<mapping class ="Parent" />
+    	<mapping class="Child"/>
+    	<mapping class="UserDetails"/>
+    	<mapping class="Vehicles"/>
+    	<!-- Mapping end -->
+    </session-factory>
+    
+</hibernate-configuration>
