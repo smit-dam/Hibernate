@@ -3,7 +3,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 
-// One to Many example is Mother table and Child table
+
+/// One to Many example is Mother table and Child table
 // One to One  example is Product table and Product_Description table
 
 //uses UserDetails and Vehicles classes 
