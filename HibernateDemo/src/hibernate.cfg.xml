@@ -35,10 +35,12 @@
 				    	<!-- <mapping class="MyStudent" />
 				    	<mapping class ="StudentWithEmbeddedAddress" />
 				    	 -->
-    	<mapping class ="Parent" />
+<!--    	<mapping class ="Parent" />
     	<mapping class="Child"/>
     	<mapping class="UserDetails"/>
     	<mapping class="Vehicles"/>
+-->
+    	<mapping class="City">
     	<!-- Mapping end -->
     </session-factory>
     
